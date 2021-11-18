@@ -1,12 +1,12 @@
 # Creating Security Groups
 
-# Security Group to access by port 22 and 80
-resource "aws_security_group" "port22-80-sg" {
-  name = "port22-80-sg"
-  description = "Security Group to open ports 22 and 80"
+# Security Group to access by port 22 and 8080
+resource "aws_security_group" "port22-8080-sg" {
+  name = "port22-8080-sg"
+  description = "Security Group to open ports 22 and 8080"
   vpc_id = data.aws_vpc.dvpc-terraform.id
   tags = {
-    Name = "port22-80-sg"
+    Name = "port22-8080-sg"
   }
   ingress {
     from_port = 22
@@ -15,8 +15,8 @@ resource "aws_security_group" "port22-80-sg" {
     cidr_blocks = ["0.0.0.0/0"]
   }
   ingress {
-    from_port = 80
-    to_port = 80
+    from_port = 8080
+    to_port = 8080
     protocol = "tcp"  
     cidr_blocks = ["0.0.0.0/0"]
   }
