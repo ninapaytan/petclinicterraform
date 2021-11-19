@@ -23,6 +23,6 @@ data "aws_subnet" "dsn-b-private" {
   id = var.sn-b-private
 }
 
-data "aws_security_group" "dport22-8080-sg" {
-  id = var.port22-8080-sg
+data "aws_security_group" "dport22-8080-sg-id" {
+  id = var.port22-8080-sg-id
 }

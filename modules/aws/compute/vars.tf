@@ -14,7 +14,7 @@ variable "sn-b-private" {
   type = any
 }
 
-variable "port22-8080-sg" {
+variable "port22-8080-sg-id" {
   type = any
 }
 

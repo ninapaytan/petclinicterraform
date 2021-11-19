@@ -5,7 +5,7 @@ resource "aws_instance" "ws-petclinic" {
   instance_type = "t2.micro"
   key_name = var.key-name
   user_data = file("../../modules/aws/compute/petclinic-web.sh")
-  vpc_security_group_ids = [data.aws_security_group.dport22-8080-sg.id]
+  vpc_security_group_ids = [var.port22-8080-sg-id]
   tags = {
     Name = "ws-petclinic"
   }

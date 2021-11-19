@@ -13,5 +13,5 @@ module "compute" {
   sn-b-public = module.network.sn-b-public-id
   sn-a-private = module.network.sn-a-private-id
   sn-b-private = module.network.sn-b-private-id
-  port22-8080-sg = module.security-groups.port22-8080-sg-id
+  port22-8080-sg-id = module.security-groups.port22-8080-sg-id
 }
