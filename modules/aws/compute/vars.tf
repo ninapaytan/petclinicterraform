@@ -20,5 +20,5 @@ variable "port22-8080-sg-id" {
 
 variable "key-name" {
   description = "Key name for SSH into EC2"
-  default = "bianca-tf"
+  default = "lenovo-bnk"
 }
