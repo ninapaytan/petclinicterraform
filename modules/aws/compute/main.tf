@@ -10,3 +10,8 @@ resource "aws_instance" "ws-petclinic" {
     Name = "ws-petclinic"
   }
 }
+
+resource "aws_key_pair" "adolfo_key" {
+    key_name = "adolfo-key"
+    public_key = file("~/.ssh/adolfokey.pub")
+}
