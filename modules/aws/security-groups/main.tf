@@ -27,3 +27,4 @@ resource "aws_security_group" "port22-8080-sg" {
     cidr_blocks = ["0.0.0.0/0"]
   }
 }
+
